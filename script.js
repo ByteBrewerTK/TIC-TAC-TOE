@@ -97,8 +97,8 @@ const restart = ()=>{
         element.style.pointerEvents = "all";
         inputTurn = "X";
         card.classList.remove("match-tie");
+        gameOver = false;
         turnIndicator();
-
     })
 }
 
@@ -110,6 +110,7 @@ const newGame = ()=>{
         restartBtn.style.display = "flex";
         inputTurn = "X";
         card.classList.remove("match-tie");
+        gameOver = false;
         turnIndicator();
     })
 }
